@@ -143,7 +143,7 @@ const Carousel = () => {
             transition={{ delay: 1.5, duration: 1 }}
           >
             <a
-              href='http://youtube.com/channel/UCuIPXx106-Ifvq6VD3ecJ4A'
+              href=''
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -157,7 +157,7 @@ const Carousel = () => {
               <img src='/skype.svg' className='w-6 md:w-10' alt='Skype' />
             </a>
             <a
-              href='https://wa.me/447577655475?text='
+              href='https://wa.me/034710766802?text='
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -167,19 +167,9 @@ const Carousel = () => {
                 alt='whtsapp'
               />
             </a>{' '}
+          
             <a
-              href='https://www.instagram.com/alquran.digital.institute'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img
-                src='/instagram.svg'
-                className='w-6 md:w-10'
-                alt='Instagram'
-              />
-            </a>
-            <a
-              href='https://www.facebook.com/profile.php?id=100083203658283'
+              href=''
               target='_blank'
               rel='noopener noreferrer'
             >

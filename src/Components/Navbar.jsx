@@ -57,24 +57,24 @@ function Navbar() {
   };
 
   return (
-    <nav className='bg-gradient-to-r from-white to-gray-50 py-5 px-6 shadow-lg sticky top-0 z-50 text-nowrap border-b border-gray-100'>
+    <nav className='bg-gradient-to-r from-white to-gray-50 py-3 px-6 shadow-lg sticky top-0 z-50 text-nowrap border-b border-gray-100'>
       <div className='container mx-auto flex justify-between items-center'>
         {/* Logo Section */}
         <div className="flex items-center">
-          <img src='/Logo.svg' alt='Logo' className="h-10 w-auto" />
+          <img src='/Logo.png' alt='Logo' className="w-[80px] " />
         </div>
 
+
         {/* Navbar Links */}
-        <ul className='hidden lg:flex space-x-8 items-center'>
+        <ul className='hidden lg:flex space-x-12 items-center mr-16'>
           {navLinks.map(link => (
             <Link to={link.url} key={link.title}>
               <li
                 onClick={() => handleSetActive(link.title)}
-                className={`${
-                  activeLink === link.title
+                className={`${activeLink === link.title
                     ? 'text-black font-semibold relative after:content-[""] after:absolute after:bottom-[-6px] after:left-0 after:w-full after:h-[3px] after:bg-[#FFD050] after:rounded-full'
                     : 'text-gray-600'
-                } text-sm hover:text-black transition-all duration-300 font-medium py-2`}
+                  } text-sm hover:text-black transition-all duration-300 font-medium py-2`}
               >
                 {link.title}
               </li>
@@ -84,15 +84,7 @@ function Navbar() {
 
         {/* 'Book Now' Button */}
         <div className='hidden lg:block'>
-          <button
-            onClick={() => setShowBookModal(true)} // Show modal on click
-            className='bg-[#FFD050] text-[#1A1A1A] font-semibold py-2.5 px-6 rounded-md transition duration-300 hover:bg-[#FFE080] hover:shadow-md transform hover:scale-105 flex items-center'
-          >
-            <span>Book Now</span>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+       
         </div>
 
         {/* Mobile & Tablet Menu Icon */}
@@ -135,23 +127,17 @@ function Navbar() {
                     <Link
                       to={link.url}
                       onClick={() => handleSetActive(link.title)}
-                      className={`${
-                        activeLink === link.title
+                      className={`${activeLink === link.title
                           ? 'text-black font-semibold relative after:content-[""] after:absolute after:bottom-[-6px] after:left-1/4 after:w-1/2 after:h-[3px] after:bg-[#FFD050] after:rounded-full'
                           : 'text-gray-600'
-                      } text-xl transition-all hover:text-black duration-300`}
+                        } text-xl transition-all hover:text-black duration-300`}
                     >
                       {link.title}
                     </Link>
                   </motion.li>
                 ))}
                 <li className="mt-4">
-                  <button
-                    onClick={() => setShowBookModal(true)}
-                    className='bg-[#FFD050] text-[#1A1A1A] font-semibold py-3 px-8 rounded-md transition duration-300 hover:bg-[#FFE080] hover:shadow-md'
-                  >
-                    Book Now
-                  </button>
+                 
                 </li>
               </ul>
             </motion.div>

@@ -132,7 +132,7 @@ function About() {
             </h1>
             <div className="w-20 h-1 bg-[#FFD050] rounded-full mb-4"></div>
             <p className="text-white text-xl sm:text-2xl md:text-3xl font-medium max-w-lg drop-shadow-md">
-              Al Quran Digital Institute
+              Al Arabiyyah tul Quran
             </p>
             <p className="text-white/90 text-lg max-w-lg mt-4 hidden md:block">
               Empowering students worldwide with authentic Quranic education through innovative digital learning.
@@ -157,11 +157,11 @@ function About() {
               Our Mission
             </div>
             <h2 className="font-semibold text-[#1C8E5A] text-3xl md:text-4xl mb-6">
-              Al Quran Digital Institute
+              Al Arabiyya tul Quran
             </h2>
             <div className="space-y-4 text-gray-700">
               <p className="font-normal text-lg leading-relaxed">
-                <span className="text-[#1C8E5A] font-medium">Al Quran Digital Institute</span> is dedicated to providing high-quality
+                <span className="text-[#1C8E5A] font-medium">Al Arabiyya tul Quran</span> is dedicated to providing high-quality
                 Quranic education to students worldwide, emphasizing the profound
                 meanings and wisdom behind every holy word revealed by Allah.
               </p>
@@ -244,7 +244,7 @@ function About() {
                 Why Study with US
               </h3>
               <h2 className="font-semibold text-2xl md:text-3xl mb-6">
-                Al Quran Digital Institute
+                Al Arabiyya tul Quran
               </h2>
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
                 We specialize in online Quran and Tajweed education, enabling you to

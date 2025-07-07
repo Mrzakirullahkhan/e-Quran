@@ -22,17 +22,12 @@ const WhyChoseMe = () => {
               Why Choose
             </h3>
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 text-center md:text-left'>
-              Al Quran Digital Institute
+              Al Arabiyya tul Quran
             </h1>
             <p className='text-gray-600 text-start md:text-left mt-4 text-sm sm:text-base '>
-              Our innovative online teaching approach makes learning through the
-              internet simpler and more effective than ever. We’ve thoughtfully
-              crafted courses tailored both for beginners and those seeking to
-              reinforce their knowledge with accurate pronunciation.
-              Additionally, we offer specialized courses for those who wish to
-              study the Quran online, with a focus on tajweed and tafseer,
-              ensuring a comprehensive and accessible learning experience for
-              all.
+              Our innovative online teaching methodology makes learning through the internet easier, more engaging, and highly effective. We have carefully designed courses that cater to both beginners and those looking to strengthen their understanding with accurate pronunciation.
+
+              In addition, we offer specialized Quran study programs focused on Tajweed and Tafseer, providing a well-rounded and accessible learning experience for students of all levels.
             </p>
 
             {/* Flexbox for paragraphs with proper spacing */}
@@ -91,12 +86,10 @@ const WhyChoseMe = () => {
                   alt='Upper line'
                 />
                 <h4 className='text-lg md:text-xl font-semibold text-gray-800 mt-2'>
-                  Multilingual Teachers
+                Skilled Multilingual Teachers
                 </h4>
                 <p className='text-gray-600 text-start md:text-left mt-2 text-sm '>
-                  Our Institute features skilled teachers fluent in Arabic,
-                  English, and Urdu, ensuring clear and effective communication
-                  for a smooth learning experience in Quran classes.
+                We offer qualified teachers proficient in Arabic, English, and Urdu to ensure seamless communication and a productive learning environment for Quranic studies.
                 </p>
               </div>
             </div>

@@ -1,12 +1,11 @@
-# Al Quran Digital Institute 🌟  
-**Empowering Knowledge through Digital Learning**  
 
-🌐 [Visit Website](https://alqurandigitalinstitute.com/)  
+
+
 
 ---
 
 ## 📖 About  
-Al Quran Digital Institute is an online Quran training platform with a modern, user-friendly interface designed to make learning accessible to everyone. The site integrates advanced animations, seamless interactions, and effective communication tools to provide an exceptional user experience.  
+Al Arabiyya tul Quran is an online Quran training platform with a modern, user-friendly interface designed to make learning accessible to everyone. The site integrates advanced animations, seamless interactions, and effective communication tools to provide an exceptional user experience.  
 
 ---
 

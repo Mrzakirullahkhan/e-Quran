@@ -23,8 +23,7 @@ function App() {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/contact' element={<ContactUs />} />
         <Route path='/faqs' element={<FAQs />} />
-        {/* <Route path="/inputmodal" element={<Modal/>} /> */}
-        {/* <Route path='/blogs' element={<Blogs />} /> */}
+
       </Routes>
     </Router>
   );

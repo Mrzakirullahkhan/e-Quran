@@ -22,8 +22,8 @@ const Card = ({
             <img src="/Card-right.png" alt="" />
           </div>
           <div className="mt-2 text-center">
-            <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-            <p className="text-gray-600 mt-2 text-start">{description}</p>
+              <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+              <p className="text-gray-600 mt-2 text-start">{description}</p>
           </div>
         </div>
 

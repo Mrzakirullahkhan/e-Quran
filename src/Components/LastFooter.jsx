@@ -14,7 +14,7 @@ function LastFooter() {
         <div>
           <div className='text-center md:text-left'>
             <h3 className='text-sm md:text-base'>
-              © 2024 Al Quran Digital Institute
+              © 2024 Al Arabiyya tul Quran
             </h3>
           </div>
         </div>
@@ -22,7 +22,7 @@ function LastFooter() {
           {/* Social Media Links */}
           <div className='flex gap-4'>
             <a
-              href='http://youtube.com/channel/UCuIPXx106-Ifvq6VD3ecJ4A'
+              href=''
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -43,17 +43,7 @@ function LastFooter() {
                 alt='Skype'
               />
             </a>
-            <a
-              href='https://www.instagram.com/alquran.digital.institute'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img
-                src='/instagram-lastfooter.svg'
-                className='w-8 md:w-10'
-                alt='Instagram'
-              />
-            </a>
+          
             <a
               href='https://www.facebook.com/profile.php?id=100083203658283'
               target='_blank'

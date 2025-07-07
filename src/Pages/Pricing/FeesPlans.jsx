@@ -10,21 +10,33 @@ function FeesPlans() {
   const plans = [
     {
       price: ' Common',
-      title: '30$/month',
-      frequency: '2 Days/week',
-      features: ['30 Min Lesson', '8 Classes/Month', '4 hours/Month'],
+      title: '60$/month',
+      frequency: '5 Days/week',
+      features: ['30 Min Lesson', '20 Classes/Month', '10 hours/Month'],
     },
     {
       price: 'Suggested',
-      title: '$40/month',
-      frequency: '3 Days/Week',
-      features: ['30 Min Lesson', '12 Classes/Month', '6 hours/Month'],
+      title: '$48/month',
+      frequency: '4 Days/Week',
+      features: ['30 Min Lesson', '16 Classes/Month', '8 hours/Month'],
     },
     {
       price: 'Recommended',
-      title: '$50/month',
-      frequency: '5 Days/Week',
-      features: ['30 Min Lesson', '20 Classes/Month', '10 hours/Month'],
+      title: '$36/month',
+      frequency: '3 Days/Week',
+      features: ['30 Min Lesson', '12 Classes/Month', '6 hours/Month'],
+    },
+     {
+      price: 'Casual',
+      title: '$25/month',
+      frequency: '2 Days/Week',
+      features: ['30 Min Lesson', '8 Classes/Month', '4 hours/Month'],
+    },
+     {
+      price: 'Enterprise',
+      title: '$35/month',
+      frequency: 'Weekend',
+      features: ['1 Hour Lesson', '4 Classes/Month', '4 hours/Month'],
     },
   ];
 
@@ -108,7 +120,7 @@ function FeesPlans() {
       </div>
 
       <div className='px-10 md:px-20'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pt-8'>
           {plans.map((plan, index) => {
             const controls = useAnimation();
             const { ref, inView } = useInView({
@@ -122,12 +134,12 @@ function FeesPlans() {
               <motion.div
                 key={index}
                 ref={ref}
-                className='rounded-[50px] shadow-xl p-6 bg-white flex flex-col items-center transition-transform transform hover:scale-105 hover:border-red-500 duration-300 ease-in-out'
+                className='rounded-[50px] shadow-md  p-6 bg-white flex flex-col items-center transition-transform transform hover:scale-105 hover:border-red-500 duration-300 ease-in-out'
                 variants={cardVariants}
                 initial='hidden'
                 animate={controls}
               >
-                <button className='h-[55px] w-[160px] bg-[#FFD050] text-[#1A1A1A] font-semibold text-lg rounded-2xl mb-5 -mt-[40px]'>
+                <button className='h-[55px] w-[160px] bg-[#1C8E5A] text-white font-semibold text-lg rounded-2xl mb-5 -mt-[40px]'>
                   {plan.price}
                 </button>
                 <h3 className='text-xl font-semibold mb-2 text-center'>
@@ -154,10 +166,7 @@ function FeesPlans() {
                     setIsModalOpen(true);
                     setActivePlan(index);
                   }}
-                  className={`h-[45px] w-[140px] font-semibold text-md rounded-full ${
-                    activePlan === index
-                      ? 'bg-[#1C8E5A] text-white'
-                      : 'bg-[#FFD050] text-[#1A1A1A] hover:bg-[#1C8E5A] hover:text-white'
+                  className={`h-[45px] w-[140px] font-semibold text-md rounded-full bg-[#FFD050] text-[#1A1A1A] hover:bg-[#1C8E5A] hover:text-white'
                   }`}
                 >
                   Select Plan

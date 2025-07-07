@@ -77,19 +77,19 @@ const Courses = () => {
           </div>
         </div>
 
-        <div className="px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 h-full">
-          {courses.map((course, index) => (
-            <Card
-              key={index}
-              title={course.title}
-              description={course.description}
-              icon={course.icon}
-              isActive={activeCardIndex === index} // Set active state based on the activeCardIndex
-              onClick={() => handleCardClick(index)} // Update active card and open modal on click
-              buttonText={course.buttonText}
-            />
-          ))}
-        </div>
+          <div className="px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 h-full">
+            {courses.map((course, index) => (
+              <Card
+                key={index}
+                title={course.title}
+                description={course.description}
+                icon={course.icon}
+                isActive={activeCardIndex === index} // Set active state based on the activeCardIndex
+                onClick={() => handleCardClick(index)} //   Update active card and open modal on click
+                buttonText={course.buttonText}
+              />
+            ))}
+          </div>
 
         {/* Modal */}
         {isModalOpen && (

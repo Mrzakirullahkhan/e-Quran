@@ -241,6 +241,10 @@ function Navbar() {
   </div>
 </div>
 
+{/* <div className='bg-[#1C8E5A] p-1  w-[90%] mx-auto rounded-full '>
+  <marquee behavior="" direction="right" className="font-bold text-white">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ, اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</marquee>
+</div> */}
+
 
       {/* Mobile Modal */}
       <AnimatePresence>

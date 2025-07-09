@@ -232,7 +232,7 @@ import 'react-phone-input-2/lib/style.css';
 import { toast } from 'react-toastify';
 
 const Modal = ({ isOpen, setIsOpen }) => {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState('Male');
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
@@ -320,7 +320,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
             onClick={e => e.stopPropagation()}
             className='bg-gradient-to-br from-[#FFD050] to-[#FFD050] text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden'
           >
-            <FiAlertCircle className='text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24' />
+            {/* <FiAlertCircle className='text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24' /> */}
 
             <div className='flex justify-end items-end'>
               <img

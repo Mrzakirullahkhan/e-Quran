@@ -172,17 +172,11 @@ const navLinks = [
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
   const [showBookModal, setShowBookModal] = useState(false);
-  const location = useLocation(); // 🚀 This is key
+  const location = useLocation();
 
   const toggleModal = () => setShowModal(!showModal);
 
-  // Determine active link by matching current path
-  const getActiveLink = () => {
-    const matched = navLinks.find(link => link.url === location.pathname);
-    return matched?.title || 'Home';
-  };
-
-  const activeLink = getActiveLink();
+  const activeLink = navLinks.find(link => link.url === location.pathname)?.title || 'Home';
 
   const modalVariants = {
     hidden: { y: '-100vh' },
@@ -215,15 +209,15 @@ function Navbar() {
 
   return (
     <nav className='bg-gradient-to-r from-white to-gray-50 py-3 px-6 shadow-lg sticky top-0 z-50 text-nowrap border-b border-gray-100'>
-      <div className='container mx-auto flex justify-between items-center'>
+      <div className='container mx-auto grid grid-cols-3 items-center'>
 
-        {/* Logo Section */}
-        <div className="flex items-center">
+        {/* Logo - Left */}
+        <div className="col-span-1 flex items-center">
           <img src='/Logo.png' alt='Logo' className="w-[80px]" />
         </div>
 
-        {/* Navbar Links */}
-        <ul className='hidden lg:flex space-x-12 items-center mr-16'>
+        {/* Nav Links - Center */}
+        <ul className='hidden lg:flex space-x-12 items-center justify-center col-span-1'>
           {navLinks.map(link => (
             <Link to={link.url} key={link.title}>
               <li
@@ -238,8 +232,8 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile & Tablet Menu Icon */}
-        <div className='lg:hidden'>
+        {/* Mobile Menu Icon - Right */}
+        <div className='lg:hidden flex justify-end col-span-1'>
           <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
             <FaBars className='text-black text-2xl' onClick={toggleModal} />
           </button>
@@ -290,7 +284,7 @@ function Navbar() {
         )}
       </AnimatePresence>
 
-      {/* Modal Component */}
+      {/* Modal Component (Book Now, currently not used) */}
       <Modal isOpen={showBookModal} setIsOpen={setShowBookModal} />
     </nav>
   );

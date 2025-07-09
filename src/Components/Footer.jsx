@@ -447,18 +447,32 @@ function Footer() {
                 />
               </div>
 
-              <div className='flex items-center overflow-hidden bg-white p-1 ps-3 w-full md:w-1/2 rounded-3xl'>
+              {/* <div className='flex items-center overflow-hidden bg-white p-1 ps-3 w-full md:w-1/2 rounded-3xl'>
                 <PhoneInput
                   country={'gb'}
                   value={input2}
                   onChange={phone => setInput2(phone)}
+                  // mkc
                   enableSearch
                   inputClass='text-black rounded-3xl outline-none w-full border-none'
                   buttonClass='rounded-3xl border-none'
                   dropdownClass='text-black bg-white rounded-3xl shadow-lg border border-gray-300 max-h-56 overflow-y-auto'
                   className='flex w-full items-center rounded-3xl border-none'
                 />
-              </div>
+              </div> */}
+
+               <div className='flex items-center bg-white p-1 ps-3 w-full md:w-1/2 rounded-3xl relative'>
+                                  <PhoneInput
+                                    country={'gb'}
+                                    value={input2}
+                                    onChange={phone => setInput2(phone)}
+                                    enableSearch
+                                    inputClass='text-black rounded-3xl border-none'
+                                    buttonClass='rounded-3xl border-none'
+                                    dropdownClass='text-black bg-white rounded-3xl shadow-lg border border-gray-300'
+                                    className='flex w-full items-center rounded-3xl'
+                                  />
+                                </div>
             </div>
 
             <div className='flex flex-col md:flex-row gap-4'>

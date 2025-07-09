@@ -209,36 +209,38 @@ function Navbar() {
 
   return (
     <nav className='bg-gradient-to-r from-white to-gray-50 py-3 px-6 shadow-lg sticky top-0 z-50 text-nowrap border-b border-gray-100'>
-      <div className='container mx-auto grid grid-cols-3 items-center'>
+    
+    <div className='container mx-auto relative flex items-center justify-between'>
 
-        {/* Logo - Left */}
-        <div className="col-span-1 flex items-center">
-          <img src='/Logo.png' alt='Logo' className="w-[80px]" />
-        </div>
+  {/* Logo - Left */}
+  <div className="flex items-center z-10">
+    <img src='/Logo.png' alt='Logo' className="w-[80px]" />
+  </div>
 
-        {/* Nav Links - Center */}
-        <ul className='hidden lg:flex space-x-12 items-center justify-center col-span-1'>
-          {navLinks.map(link => (
-            <Link to={link.url} key={link.title}>
-              <li
-                className={`${activeLink === link.title
-                    ? 'text-black font-semibold relative after:content-[""] after:absolute after:bottom-[-6px] after:left-0 after:w-full after:h-[3px] after:bg-[#FFD050] after:rounded-full'
-                    : 'text-gray-600'
-                  } text-sm hover:text-black transition-all duration-300 font-medium py-2`}
-              >
-                {link.title}
-              </li>
-            </Link>
-          ))}
-        </ul>
+  {/* Nav Links - Center */}
+  <ul className='hidden lg:flex space-x-12 items-center absolute left-1/2 -translate-x-1/2'>
+    {navLinks.map(link => (
+      <Link to={link.url} key={link.title}>
+        <li
+          className={`${activeLink === link.title
+              ? 'text-black font-semibold relative after:content-[""] after:absolute after:bottom-[-6px] after:left-0 after:w-full after:h-[3px] after:bg-[#FFD050] after:rounded-full'
+              : 'text-gray-600'
+            } text-sm hover:text-black transition-all duration-300 font-medium py-2`}
+        >
+          {link.title}
+        </li>
+      </Link>
+    ))}
+  </ul>
 
-        {/* Mobile Menu Icon - Right */}
-        <div className='lg:hidden flex justify-end col-span-1'>
-          <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
-            <FaBars className='text-black text-2xl' onClick={toggleModal} />
-          </button>
-        </div>
-      </div>
+  {/* Mobile Hamburger - Right */}
+  <div className='lg:hidden z-10'>
+    <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
+      <FaBars className='text-black text-2xl' onClick={toggleModal} />
+    </button>
+  </div>
+</div>
+
 
       {/* Mobile Modal */}
       <AnimatePresence>

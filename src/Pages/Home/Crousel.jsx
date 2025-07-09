@@ -157,7 +157,7 @@ const Carousel = () => {
               <img src='/skype.svg' className='w-6 md:w-10' alt='Skype' />
             </a>
             <a
-              href='https://wa.me/034710766802?text='
+              href='https://wa.me/+447846199366?text='
               target='_blank'
               rel='noopener noreferrer'
             >

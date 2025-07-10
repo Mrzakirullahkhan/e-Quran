@@ -14,14 +14,14 @@ function App() {
     <Router>
       {/* Navbar will be present on all pages */}
       <Navbar />
-<div className="fixed top-[85px] left-0 w-full bg-[#1C8E5A] px-2 py-1 z-50"><marquee
+{/* <div className="fixed top-[85px] left-0 w-full bg-[#1C8E5A] px-2 py-1 z-50"><marquee
   direction="right"
   className="font-bold text-white"
   style={{ wordSpacing: '10px' }}
 >
   اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ, اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ
 </marquee>
-</div>
+</div> */}
 
       {/* Define routes for each page */}
       <Routes>

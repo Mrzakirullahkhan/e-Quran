@@ -13,7 +13,7 @@
 //   const [input2, setInput2] = useState(''); // Phone
 //   const [input3, setInput3] = useState(''); // Email
 //   const [input4, setInput4] = useState(''); // Message
-  
+
 
 //   const controls = useAnimation();
 //   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -46,7 +46,7 @@
 //       user_email: input3,
 //       user_mobile: input2,
 //       user_message: input4, // Changed to use `message`
-    
+
 //     };
 
 //     // Send the email
@@ -86,7 +86,7 @@
 
 
 
-      
+
 //       <div className='grid grid-cols-1 md:grid-cols-12 gap-6 bg-[#1C8E5A] overflow-hidden'>
 //         {/* Left Section with Logo and Text */}
 //         <motion.div
@@ -280,7 +280,7 @@
 
 // export default Footer;
 
-import emailjs from 'emailjs-com'; 
+import emailjs from 'emailjs-com';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -318,7 +318,7 @@ function Footer() {
   const handleEnrollNowClick = (e) => {
     e.preventDefault();
 
-    if (!input1.trim()  || !input3.trim() || !input4.trim()) {
+    if (!input1.trim() || !input3.trim() || !input4.trim()) {
       toast.error("Please fill in all the fields");
       return;
     }
@@ -393,40 +393,36 @@ function Footer() {
           <div className='flex items-center gap-4 justify-center'>
             {/* Keep radio buttons exactly as you provided */}
             <label
-              className={`flex items-center gap-2 ${
-                selectedOption === 'Male' ? 'text-[#FFD050]' : 'text-[#9F9F9F]'
-              }`}
+              className={`flex items-center gap-2 ${selectedOption === 'Male' ? 'text-[#FFD050]' : 'text-[#9F9F9F]'
+                }`}
             >
               <input
                 type='radio'
                 value='Male'
                 checked={selectedOption === 'Male'}
                 onChange={() => setSelectedOption('Male')}
-                className={`form-radio w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 ${
-                  selectedOption === 'Male'
+                className={`form-radio w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 ${selectedOption === 'Male'
                     ? 'border-[#FFD050]'
                     : 'border-transparent'
-                } accent-[#FFD050]`}
+                  } accent-[#FFD050]`}
               />
               <span>Male</span>
             </label>
             <label
-              className={`flex items-center gap-2 ${
-                selectedOption === 'Female'
+              className={`flex items-center gap-2 ${selectedOption === 'Female'
                   ? 'text-[#FFD050]'
                   : 'text-[#9F9F9F]'
-              }`}
+                }`}
             >
               <input
                 type='radio'
                 value='Female'
                 checked={selectedOption === 'Female'}
                 onChange={() => setSelectedOption('Female')}
-                className={`form-radio w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 ${
-                  selectedOption === 'Female'
+                className={`form-radio w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 ${selectedOption === 'Female'
                     ? 'border-[#FFD050]'
                     : 'border-transparent'
-                } accent-[#FFD050]`}
+                  } accent-[#FFD050]`}
               />
               <span>Female</span>
             </label>
@@ -461,18 +457,18 @@ function Footer() {
                 />
               </div> */}
 
-               <div className='flex items-center bg-white p-1 ps-3 w-full md:w-1/2 rounded-3xl relative'>
-                                  <PhoneInput
-                                    country={'gb'}
-                                    value={input2}
-                                    onChange={phone => setInput2(phone)}
-                                    enableSearch
-                                    inputClass='text-black rounded-3xl border-none'
-                                    buttonClass='rounded-3xl border-none'
-                                    dropdownClass='text-black bg-white rounded-3xl shadow-lg border border-gray-300'
-                                    className='flex w-full items-center rounded-3xl'
-                                  />
-                                </div>
+              <div className='flex items-center bg-white p-1 ps-3 w-full md:w-1/2 rounded-3xl relative'>
+                <PhoneInput
+                  country={'gb'}
+                  value={input2}
+                  onChange={phone => setInput2(phone)}
+                  enableSearch
+                  inputClass='text-black rounded-3xl border-none'
+                  buttonClass='rounded-3xl border-none'
+                  dropdownClass='text-black bg-white rounded-3xl shadow-lg border border-gray-300'
+                  className='flex w-full items-center rounded-3xl'
+                />
+              </div>
             </div>
 
             <div className='flex flex-col md:flex-row gap-4'>
@@ -528,13 +524,13 @@ function Footer() {
             />
             <p>Plot No. 42, Sunrise Road Greenfields Estate Kikuyu</p>
           </motion.div>
-          <motion.div className='flex items-center gap-2' whileHover={{ x: 5 }}>
-           <div className='bg-white p-1.5 rounded-full '>
-            <FaWhatsapp color="#1C8E5A" size={16}/>
-           </div>
+          {/* <motion.div className='flex items-center gap-2' whileHover={{ x: 5 }}>
+            <div className='bg-white p-1.5 rounded-full '>
+              <FaWhatsapp color="#1C8E5A" size={16} />
+            </div>
             <p>
-+44 7846 199366</p>
-          </motion.div>
+              +44 7846 199366</p>
+          </motion.div> */}
           <motion.div className='flex items-center' whileHover={{ x: 5 }}>
             <img
               src='/footeremail-icon.svg'

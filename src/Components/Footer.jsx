@@ -524,13 +524,13 @@ function Footer() {
             />
             <p>Plot No. 42, Sunrise Road Greenfields Estate Kikuyu</p>
           </motion.div>
-          {/* <motion.div className='flex items-center gap-2' whileHover={{ x: 5 }}>
+          <motion.div className='flex items-center gap-2' whileHover={{ x: 5 }}>
             <div className='bg-white p-1.5 rounded-full '>
               <FaWhatsapp color="#1C8E5A" size={16} />
             </div>
             <p>
-              +44 7846 199366</p>
-          </motion.div> */}
+              +44 7830 756879</p>
+          </motion.div>
           <motion.div className='flex items-center' whileHover={{ x: 5 }}>
             <img
               src='/footeremail-icon.svg'

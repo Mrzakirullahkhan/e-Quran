@@ -529,7 +529,7 @@ function Footer() {
               <FaWhatsapp color="#1C8E5A" size={16} />
             </div>
             <p>
-              +44 7830 756879</p>
+              +44 7412 809458</p>
           </motion.div>
           <motion.div className='flex items-center' whileHover={{ x: 5 }}>
             <img

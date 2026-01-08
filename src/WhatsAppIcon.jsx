@@ -14,6 +14,7 @@ const WhatsAppIcon = () => {
         repeatType: 'loop',
       }}
     >
+      
       <a
         href='https://wa.me/+447830756879?text='
         target='_blank'

@@ -20,7 +20,7 @@ function ContactDetail() {
     },
     {
       title: "Phone Number",
-      description: "+44 7846 199366",
+      description: "+44 7830 756879",
       iconSrc: "/Frame 142.svg",
       iconAlt: "Email Icon",
     },
